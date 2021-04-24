@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Middle from "./Middle";
 
 const Container = ({ data }) => {
   return (
@@ -14,7 +15,9 @@ const Container = ({ data }) => {
         <Card title="Liquidity Pool Gains" balance={data.netGainUsd} icon={2} />
         <Card title="Net Market Gains" balance={data.netGainPct} icon={3} />
       </div>
-      <div className="flex  ml-3 mt-6 space-x-6  mr-4"></div>
+      <div className="flex  ml-3 mt-6 space-x-6  mr-4">
+        <Middle data={data.userPools} />
+      </div>
     </div>
   );
 };

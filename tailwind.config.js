@@ -10,6 +10,7 @@ module.exports = {
         xs: "12px",
         sm: "14px",
         tiny: "16px",
+        md: "18px",
         base: "24px",
         lg: "28px",
         xl: "1.25rem",
