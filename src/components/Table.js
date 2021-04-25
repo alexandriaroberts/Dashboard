@@ -27,17 +27,17 @@ const Table = ({ data }) => {
           {data.map((item) => (
             <tr key={item.address} className="border-b-2 bg-gray-100">
               <td className="px-8 py-4 ">
-                <p className="text-purple-700 text-sm font-semibold">
+                <span className="block text-purple-700 text-sm font-semibold">
                   LINK/ETH
-                </p>
-                <span className="text-gray-300 text-xs">
+                </span>
+                <span className="block text-gray-300 text-xs">
                   {item.poolProviderName}
                 </span>
               </td>
               <td className="text-gray-800 text-xs">
                 {Math.round(item.mintBurntLedgerLpTokens * 100) / 100} →
                 {Math.round(item.currentOwnedLpTokens * 100) / 100} LINK
-                <span className="text-green-500 text-xs">
+                <span className="block text-green-500 text-xs">
                   {Math.round(item.ownedLpTokensPct * 100) / 100} LINK (+
                   {Math.round(item.mintBurntLedgerLpTokens)})
                 </span>
