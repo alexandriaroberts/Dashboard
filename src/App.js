@@ -1,5 +1,5 @@
 import "tailwindcss/tailwind.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/sidebar";
 import Header from "./components/Header";
 import Container from "./components/Container";
 

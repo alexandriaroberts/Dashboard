@@ -1,12 +1,9 @@
 import React from "react";
 import { BiChevronRightCircle } from "react-icons/bi";
 import Table from "./Table";
-// import { useState, useEffect } from "react";
 
 const Middle = ({ data }) => {
-  //   let userPools = data.userPools;
   if (!Array.isArray(data)) return null;
-  console.log(data);
 
   return (
     <div className="w-full mt-8 mb-6  ">
